@@ -1,19 +1,47 @@
 # Dashboard - Power BI
 
-Projeto de análise de vendas desenvolvido no Power BI a partir de uma base em Excel. O objetivo foi transformar uma tabela bruta de vendas em uma base limpa, organizada e pronta para gerar um dashboard completo, com indicadores, filtros e visualizações para apoiar a leitura dos resultados.
+Esse projeto foi feito para mostrar todo o processo de transformação de uma base de vendas em um dashboard completo no Power BI.
 
-## Sobre o projeto
+A ideia foi pegar uma planilha que ainda precisava de tratamento, organizar os dados no Power Query e, depois disso, montar uma visualização mais clara para acompanhar faturamento, produtos vendidos, categorias e vendas por país.
 
-Neste projeto, trabalhei a base `Vendas.xlsx` no Power BI, fazendo a limpeza e a modelagem dos dados antes da construção do dashboard. A tabela original tinha problemas comuns em bases reais, como colunas vazias, linhas vazias, nomes de clientes invertidos, registros repetidos e informações que precisavam ser padronizadas.
+## Base utilizada
 
-A partir desse tratamento, a base foi transformada em uma super tabela de vendas, reunindo informações de data, produto, categoria, preço, custo, marca, quantidade vendida, cliente e localidade.
+A base original estava em Excel e tinha informações de vendas como data, produto, categoria, preço unitário, custo, marca, quantidade vendida, cliente e localidade.
 
-## Arquivos do projeto
+Antes de montar o dashboard, eu fiz uma análise da tabela para entender quais ajustes seriam necessários.
 
-- `Dashboard.pbix`: arquivo principal do Power BI com o dashboard final.
-- `Vendas.xlsx`: base original utilizada no projeto.
-- `docs/dicionario-dados.md`: descrição das principais colunas da base.
-- `docs/processo-tratamento-dados.md`: resumo das etapas de limpeza e transformação.
+![Planilha original no Excel](Imagens/Planilha%20do%20Excel.png)
+
+## O que eu tratei nos dados
+
+No Power Query, fiz a limpeza da base para deixar os dados mais organizados e confiáveis para a análise.
+
+Alguns dos tratamentos feitos foram:
+
+- removi colunas vazias;
+- removi linhas vazias;
+- ajustei nomes que estavam invertidos;
+- tirei espaços extras nos textos;
+- corrigi informações repetidas;
+- padronizei campos como marca, cliente e localidade;
+- organizei a tabela para trabalhar melhor com vendas, custo e quantidade.
+
+Depois dessa etapa, a base ficou pronta para virar uma tabela de vendas mais completa e fácil de analisar.
+
+## Dashboard final
+
+Com os dados tratados, montei o dashboard no Power BI pensando em deixar a leitura simples e direta.
+
+Nele eu acompanho:
+
+- faturamento total;
+- faturamento por período;
+- produtos mais vendidos;
+- vendas por país;
+- categorias de produtos;
+- distribuição das vendas por região.
+
+![Dashboard de vendas no Power BI](Imagens/Dashboard%20Vendas.png)
 
 ## Ferramentas utilizadas
 
@@ -22,77 +50,27 @@ A partir desse tratamento, a base foi transformada em uma super tabela de vendas
 - Excel
 - GitHub
 
-## Etapas desenvolvidas
+## Arquivos do projeto
 
-### 1. Importação da base
-
-A base de vendas foi importada do Excel para o Power BI. A partir dela, iniciei a análise da estrutura dos dados para identificar inconsistências e pontos de melhoria.
-
-### 2. Limpeza dos dados
-
-Durante o tratamento no Power Query, foram realizadas etapas como:
-
-- Remoção de colunas vazias.
-- Remoção de linhas vazias.
-- Exclusão de registros duplicados.
-- Padronização de textos.
-- Correção de espaços extras em campos como marca e cliente.
-- Ajuste de nomes de clientes que estavam invertidos no formato `Sobrenome, Nome`.
-
-### 3. Organização da tabela de vendas
-
-Depois da limpeza, a tabela foi organizada para facilitar a análise. As principais colunas trabalhadas foram:
-
-- Data da venda
-- Produto
-- Categoria
-- Preço unitário
-- Custo unitário
-- Marca
-- Quantidade vendida
-- Nome do cliente
-- Localidade
-
-Também foi possível estruturar a base para análises de vendas por produto, categoria, cliente, marca, período e região.
-
-### 4. Criação do dashboard
-
-Com os dados tratados, construí o dashboard no Power BI para apresentar os principais resultados de vendas de forma visual e objetiva.
-
-O dashboard permite acompanhar:
-
-- Total de vendas.
-- Quantidade vendida.
-- Custo dos produtos.
-- Lucro estimado.
-- Desempenho por categoria.
-- Desempenho por marca.
-- Vendas por localidade.
-- Evolução das vendas ao longo do tempo.
-
-## Resultado
-
-O resultado final foi um dashboard completo de vendas, criado a partir de uma base que passou por limpeza, padronização e transformação. O projeto mostra como uma tabela bruta pode ser preparada no Power BI para gerar análises mais claras, confiáveis e profissionais.
+- `Dashboard.pbix`: arquivo do Power BI com o dashboard final.
+- `Vendas.xlsx`: planilha usada como base do projeto.
+- `Imagens/`: prints da base original e do dashboard pronto.
+- `docs/dicionario-dados.md`: descrição das colunas da base.
+- `docs/processo-tratamento-dados.md`: resumo do tratamento feito nos dados.
 
 ## Como visualizar
 
-1. Baixe ou clone este repositório.
+1. Baixe este repositório.
 2. Abra o arquivo `Dashboard.pbix` no Power BI Desktop.
-3. Caso necessário, atualize a origem dos dados apontando para o arquivo `Vendas.xlsx`.
-4. Explore os filtros e gráficos do dashboard.
+3. Se o Power BI pedir, atualize o caminho da base para o arquivo `Vendas.xlsx`.
+4. Explore os gráficos e filtros do dashboard.
 
-## Aprendizados
+## O que aprendi com esse projeto
 
-Com este projeto, pratiquei:
+Esse projeto me ajudou a praticar melhor o processo completo de uma análise no Power BI, desde a limpeza dos dados até a construção do dashboard.
 
-- Tratamento de dados no Power Query.
-- Limpeza de bases com inconsistências.
-- Padronização de nomes e textos.
-- Remoção de dados vazios e repetidos.
-- Organização de uma tabela de vendas.
-- Criação de dashboard no Power BI.
-- Apresentação de análise de dados em portfólio no GitHub.
+Também foi uma forma de reforçar a importância de preparar bem a base antes de criar os gráficos, porque dados desorganizados podem atrapalhar muito a leitura dos resultados.
 
 ---
 
-Projeto desenvolvido para portfólio de análise de dados.
+Projeto desenvolvido para meu portfólio de análise de dados.
