@@ -1,0 +1,17 @@
+# Power BI
+*.pbit
+*.pbix.tmp
+*.pbix.bak
+
+# Excel
+~$*.xlsx
+~$*.xlsm
+~$*.xls
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+
+# Editor
+.vscode/
+.idea/
